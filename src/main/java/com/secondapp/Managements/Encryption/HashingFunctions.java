@@ -19,5 +19,4 @@ public class HashingFunctions {
         }
         return hashvalue;
     }
-
 }
