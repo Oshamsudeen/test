@@ -13,11 +13,9 @@ public class HashingFunctions {
              messageDigest.update(inputBytes);
              byte[] digestBytes = messageDigest.digest();
              hashvalue = DatatypeConverter.printHexBinary(digestBytes).toLowerCase(Locale.ROOT);
-
         }catch (Exception e){
             System.out.println(String.format("hash error %s" , e.getMessage()));
         }
         return hashvalue;
     }
-
 }
